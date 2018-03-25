@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel='stylesheet', href='../public/stylesheets/style.css' />
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>Welcome to {{title}}</h1>
+    <form method="post" action="/launch-encoder">
+        <div>
+            Origin:<br>
+            <input type="text" name="origin"><br>
+            CDN:<br>
+            <input type="text" name="cdn">
+        </div>
+        <button type="submit">Launch Encoder</button>
+    </form>
+</body>
+</html>
