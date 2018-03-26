@@ -1,9 +1,19 @@
 import React from 'react';
+import ActionBar from '../components/ActionBar/ActionBar';
 
-const Home = () => (
-  <div>
-    <h2>Home Page</h2>
-  </div>
-);
+class Home extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <ActionBar inputs={['origin url', 'cdn url']} submitButtonName="launch" onSubmit={() => {}} />
+      </div>
+    )
+  }
+}
 
 export default Home;
