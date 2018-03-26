@@ -4,9 +4,9 @@ import './ActionBar.scss';
 const ActionBar = (props) => (
   <div className="ActionBar">
     <form>
-      {props.inputs.map((input, i) => {
+      {props.inputs.map((input) => {
         return (
-          <div className="ActionBar__formItem">
+          <div className="ActionBar__formItem" key={`${input}`}>
             <label>{input}</label>
             <input type="text" />
           </div>
@@ -26,6 +26,7 @@ ActionBar.defaultProps = {
   onSubmit: () => {},
   submitButtonName: '',
   inputs: [],
+  fixedBottom: false,
 };
 
 export default ActionBar;
